@@ -19,7 +19,7 @@ class ProductModel {
   final String descricaoSubgrupo;
   final String descricaoSubgrupoEcommerce;
   final dynamic
-      detalheProduto; // Pode ser de qualquer tipo, dependendo do JSON real
+      detalheProduto; 
   final int flagEstoque;
   final String fornecedor;
   final String fragrancia;
