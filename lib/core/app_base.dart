@@ -4,7 +4,6 @@ import 'app_base_controller.dart';
 
 class DestinationItem {
   const DestinationItem(this.label, this.icon, this.selectedIcon);
-
   final String label;
   final Widget icon;
   final Widget selectedIcon;
@@ -12,10 +11,9 @@ class DestinationItem {
 
 const List<DestinationItem> destinations = <DestinationItem>[
   DestinationItem('Home', Icon(Icons.home_outlined), Icon(Icons.home)),
-  DestinationItem(
-      'Produtos', Icon(Icons.store_outlined), Icon(Icons.store)),
-  DestinationItem(
-      'Carrinho', Icon(Icons.shopping_cart_outlined), Icon(Icons.shopping_cart)),
+  DestinationItem('Produtos', Icon(Icons.store_outlined), Icon(Icons.store)),
+  DestinationItem('Carrinho', Icon(Icons.shopping_cart_outlined),
+      Icon(Icons.shopping_cart)),
   DestinationItem(
       'Favoritos', Icon(Icons.favorite_outline), Icon(Icons.favorite)),
 ];
@@ -100,25 +98,5 @@ class _AppBaseState extends State<AppBase> {
         ).toList(),
       ),
     );
-    //   bottomNavigationBar: NavigationBar(
-    //     labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
-    //     destinations: destinations.map(
-    //           (ExampleDestination destination) {
-    //         return NavigationDestination(
-    //           label: destination.label,
-    //           icon: destination.icon,
-    //           selectedIcon: destination.selectedIcon,
-    //           tooltip: destination.label,
-    //         );
-    //       },
-    //     ).toList(),)
-    //     selectedIndex: _controller.currentTab,
-    //     onDestinationSelected: (int index) {
-    //       setState(() {
-    //         _controller.onItemTapped(index: index);
-    //       });
-    //     },
-    //   ),
-    // );
   }
 }
